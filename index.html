@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meditation Timer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="logo">
+        <img src="./img/logo.png" alt="Логотип" width="400">
+    </div>
+
+    <form  class="timer" onsubmit="app.submit(event)">
+        <div class="info">Установить время медитации на 
+    <input type="number" name="time"
+           aria-label="Количество минут" value="10">
+        минут</div>
+        <div class="countdown">
+            <div class="num" id="min_tens">0</div>
+            <div class="num" id="min">0</div>
+            <div class="dots">:</div>
+            <div class="num" id="sec_tens">0</div>
+            <div class="num" id="sec">0</div>
+        </div>
+        <button type="submit" class="button">
+            <img src="./img/Play.png" alt="Кнопка" width="40" /> Начать отсчет
+        </button>
+    </form>
+    
+</div>
+
+
+</body>
+</html>
